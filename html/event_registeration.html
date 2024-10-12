@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Housing Society - Event Registration</title>
+    <link rel="stylesheet" href="/Event_Management-main/assets/css/event_registeration.css">
+    
+
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+        <div class="main-content">
+            <div class="left-section">
+                <h1>Event Registration</h1>
+                <p>Please select your participation preference</p>
+            </div>
+            <div class="right-section">
+                <form>
+                    <label for="participation">Participation:</label>
+                    <div class="option-group">
+                        <input type="radio" id="participate-yes" name="participation" value="yes">
+                        <label for="participate-yes">Yes, I will participate</label>
+
+                        <input type="radio" id="participate-no" name="participation" value="no">
+                        <label for="participate-no">No, I can't make it</label>
+                    </div>
+
+                    <label for="volunteer">Volunteer:</label>
+                    <div class="option-group">
+                        <input type="radio" id="volunteer-yes" name="volunteer" value="yes">
+                        <label for="volunteer-yes">Yes, I will</label>
+
+                        <input type="radio" id="volunteer-no" name="volunteer" value="no">
+                        <label for="volunteer-no">No, I can't make it</label>
+                    </div>
+
+                    <label for="role">Volunteer Role:</label>
+                    <div class="option-group">
+                        <input type="radio" id="role-setup" name="role" value="setup">
+                        <label for="role-setup">Setup</label>
+
+                        <input type="radio" id="role-coordinator" name="role" value="coordinator">
+                        <label for="role-coordinator">Coordinator</label>
+
+                        <input type="radio" id="role-other" name="role" value="other">
+                        <label for="role-other">Other</label>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>  
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+    <script>
+        // Fetch the header HTML and insert it into the page
+        fetch('header.html') // Ensure this path is correct based on your directory structure
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+</body>
+</html>

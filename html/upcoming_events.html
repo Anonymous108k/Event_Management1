@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Housing Society</title>
+    <link rel="stylesheet" href="/Event_Management-main/assets/css/upcoming_events.css">
+</head>
+<body>
+
+    <div id="header-container"></div> <!-- Placeholder for the header -->
+
+    <div class="main-content">
+        <div class="left-section">
+            <h1>Upcoming Events</h1> <!-- Title in the left section -->
+            <p>Here are the upcoming events:</p>
+        </div>
+        <div class="right-section">
+            <div class="events-list">
+                <div class="event-item">
+                    <img src="path/to/image1.jpg" alt="Block Party" class="event-image"> <!-- Circular image -->
+                    <div class="event-details">
+                        <h3>Block Party</h3>
+                        <p>Date: 26th May</p>
+                        <p>Time: 4:00 PM</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <img src="path/to/image2.jpg" alt="Art Exhibition" class="event-image"> <!-- Circular image -->
+                    <div class="event-details">
+                        <h3>Art Exhibition</h3>
+                        <p>Date: 30th May</p>
+                        <p>Time: 10:00 AM</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <img src="path/to/image3.jpg" alt="Dance Workshop" class="event-image"> <!-- Circular image -->
+                    <div class="event-details">
+                        <h3>Dance Workshop</h3>
+                        <p>Date: 2nd June</p>
+                        <p>Time: 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+    <script>
+        // Fetch the header HTML and insert it into the page
+        fetch('header.html') // Ensure this path is correct based on your directory structure
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+</body>
+</html>

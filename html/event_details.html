@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="/Event_Management-main/assets/css/header.css">
+    <link rel="stylesheet" href="/Event_Management-main/assets/css/event_details.css">
+    <script>
+        // Function to load header
+        function loadHeader() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        }
+
+        // Load header when the page loads
+        window.onload = loadHeader;
+    </script>
+</head>
+<body>
+    <header id="header">
+        <!-- Header will be loaded here -->
+    </header>
+
+    <main class="main-content">
+        <div class="left-section">
+            <h2 class="centered">Event Details</h2>
+            <div class="details-container">
+                <div class="row">
+                    <div class="detail-card">
+                        <div class="card-content">
+                            <h3>Number of Participants</h3>
+                            <p>30</p>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="card-content">
+                            <h3>Number of Volunteers</h3>
+                            <p>10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="detail-card">
+                        <div class="card-content">
+                            <h3>Attendees</h3>
+                            <p>John Doe, Jane Smith</p>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="card-content">
+                            <h3>Volunteers</h3>
+                            <p>Amy Johnson, Mark Davis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="back-button">Back</a>
+        </div>
+    </main>
+</body>
+</html>
