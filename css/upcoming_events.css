@@ -1,0 +1,52 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.main-content {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between the left and right sections */
+  align-items: flex-start; /* Align items to the top */
+  padding: 20px; /* Add some padding around the main content */
+}
+
+.left-section {
+  width: 55%;
+  padding-top:130px;
+  padding-left:70px ; 
+ 
+  text-align: left;
+}
+
+.right-section {
+  width: 40%; /* Adjust width as needed */
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column; /* Stack events vertically */
+  gap: 10px; /* Space between events */
+}
+
+.event-item {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  padding: 10px;
+  background-color: #ffffff; /* Light background for event items */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Soft grey line */
+  cursor: pointer;
+}
+
+.event-image {
+  width: 50px; /* Set width of the image */
+  height: 50px; /* Set height of the image */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the circle */
+  margin-right: 10px; /* Space between the image and text */
+}
+
+.event-details {
+  flex-grow: 1; /* Allow the text to grow */
+}

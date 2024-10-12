@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    margin-bottom: 20px; /* Space below the header */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Soft grey line */
+    padding-bottom: 10px; /* Add some space below the header */
+}
+
+
+
+.logo-image {
+    width: 40px; /* Set the width of the circular image */
+    height: 40px; /* Set the height of the circular image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the circle */
+}
+
+.society-name {
+    flex-grow: 1; /* Allows the society name to take up available space */
+    margin-left: 20px; /* Space between logo and society name */
+    font-weight: bold; /* Bold text */
+    font-size: 24px; /* Larger font size */
+    text-align: left; /* Aligns text to the left */
+}
+
+.navigation {
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between navigation links */
+}
+
+.navigation a {
+    text-decoration: none; /* Removes underline from links */
+    color: #000; /* Black text color */
+    font-weight: 500; /* Medium font weight */
+}
+
+.navigation a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}

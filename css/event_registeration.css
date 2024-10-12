@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+
+.main-content {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between the left and right sections */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Add some padding around the main content */
+  }
+
+.society-name {
+    flex-grow: 1;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.left-section {
+    width: 50%;
+    padding-top: 160px;
+    padding-left: 160px;
+    text-align: left;
+}
+
+.right-section {
+    
+    display: flex;
+    flex-direction: column;
+    padding-top:50px;
+    gap: 20px;
+    padding-right: 160px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.option-group {
+    width: 120%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    padding: 10px 40px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
